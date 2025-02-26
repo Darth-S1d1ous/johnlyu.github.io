@@ -1,0 +1,41 @@
+body {
+  font-family: gill sans, sans-serif;
+  margin: 0rem;
+  font-size: 1.1rem;
+  background-color: rgb(246, 245, 244);
+  color: rgb(46, 46, 46);
+}
+
+#heading-toolbar {
+  display: block;
+  position: sticky;
+  top: 0;
+  background-color: grey;
+  border-bottom: 1px solid #e1e1e1;
+  color: #ffffff;
+}
+
+#toolbar-container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1100px;
+  align-items: center;
+}
+
+#name {
+  display: inline-block;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 2rem;
+  margin-top: 0.7rem;
+  margin-bottom: 0.7rem;
+  text-align: center;
+}
+
+#navbar {
+  display: inline-block;
+}
+
+#profile {
+  max-width: 25%;
+  height: auto;
+}
