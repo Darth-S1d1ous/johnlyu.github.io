@@ -10,7 +10,7 @@ body {
   display: block;
   position: sticky;
   top: 0;
-  background-color: grey;
+  background-color: rgb(94, 92, 92);
   border-bottom: 1px solid #e1e1e1;
   color: #ffffff;
 }
@@ -18,24 +18,85 @@ body {
 #toolbar-container {
   margin-left: auto;
   margin-right: auto;
-  width: 1100px;
+  width: 1000px;
   align-items: center;
 }
 
 #name {
   display: inline-block;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-size: 2rem;
+  font-family: georgia, serif;
+  font-size: 1.5rem;
   margin-top: 0.7rem;
   margin-bottom: 0.7rem;
   text-align: center;
 }
 
-#navbar {
+#menu-bar {
   display: inline-block;
+  margin-left: 15px;
+  padding: 0rem;
+}
+
+#menu-bar ul {
+  display: inline-block;
+  padding: 0rem;
+}
+
+#menu-bar li {
+  font-size: 1rem;
+  text-align: center;
+  display: inline-block;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+#menu-bar a {
+  text-decoration: solid;
+  color: #ffffff;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+#menu-icon {
+  display: none;
+}
+
+#container {
+  display: flex;
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#left-sidebar {
+  display: inline-block;
+  width: 25%;
+  margin: 10px;
+  margin-top: 30px;
 }
 
 #profile {
-  max-width: 25%;
+  width: 100%;
   height: auto;
+  transform-origin: top left;
+  transform: scale(1);
+  clip-path: xywh(0% 0 100% 100% round 5% 5%);
+}
+
+#left-sidebar ul {
+  list-style-type: none;
+  padding-left: 0.1rem;
+}
+
+#left-sidebar ul li {
+  display: inline-block;
+}
+
+#main-content {
+  display: inline-block;
+  width: 68%;
+  height: 100%;
+  margin: 20px 20px 20px 30px;
 }

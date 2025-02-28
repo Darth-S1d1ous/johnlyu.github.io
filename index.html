@@ -5,26 +5,34 @@
     <link rel="stylesheet" type="text/css" href="styles/home_style.css" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
   </head>
   <body>
     <div id="heading-toolbar">
       <div id="toolbar-container">
         <b id="name">Lyu Wenzhuang John</b>
-        <nav id="navbar">
-          <button onclick="navigate('index.html', this)" class="nav-button">
-            Home
-          </button>
-          <button onclick="navigate('projects.html', this)" class="nav-button">
-            Projects
-          </button>
-          <button onclick="navigate('vita.html', this)" class="nav-button">
-            Vita
-          </button>
+        <nav role="navigation" id="menu-bar">
+          <ul id="nav-list">
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="projects.html">Projects</a>
+            </li>
+            <li>
+              <a href="files/resume.pdf">Vita</a>
+            </li>
+          </ul>
+          <input type="checkbox" id="menu-toggle" />
+          <label for="menu-toggle" id="menu-icon" tabindex="1"></label>
         </nav>
       </div>
     </div>
     <div id="container">
-      <div class="left-sidebar">
+      <div id="left-sidebar">
         <img id="profile" src="images/john.jpg" />
         <h2>Contact</h2>
         <p>
@@ -33,10 +41,23 @@
         </p>
         <hr />
         <h2>Links</h2>
-        <p></p>
+        <ul>
+          <li>
+            <a href="https://github.com/Darth-S1d1ous">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/wenzhuang-lyu-b27928322/">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+          <li></li>
+          <li></li>
+        </ul>
         <hr />
       </div>
-      <div class="main-content">
+      <div id="main-content">
         <h1>Biography</h1>
         <p>Welcome to my homepage!</p>
         <p>
