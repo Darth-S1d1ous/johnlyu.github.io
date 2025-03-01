@@ -1,8 +1,13 @@
 body {
   font-family: gill sans, sans-serif;
   margin: 0rem;
+  padding: 0rem;
   font-size: 1.1rem;
-  background-color: rgb(246, 245, 244);
+  background-image: linear-gradient(
+    135deg,
+    rgb(230, 248, 254),
+    rgb(255, 255, 255)
+  );
   color: rgb(46, 46, 46);
 }
 
@@ -10,7 +15,7 @@ body {
   display: block;
   position: sticky;
   top: 0;
-  background-color: rgb(94, 92, 92);
+  background-color: rgb(73, 72, 72);
   border-bottom: 1px solid #e1e1e1;
   color: #ffffff;
 }
@@ -45,15 +50,65 @@ body {
 #menu-bar li {
   font-size: 1rem;
   text-align: center;
+  position: relative;
   display: inline-block;
   margin-left: 5px;
   margin-right: 5px;
+  background-color: rgb(73, 72, 72);
 }
 
 #menu-bar a {
-  text-decoration: solid;
+  font-family: verdana;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 1px;
+  padding: 0px 5px 0px 5px;
   color: #ffffff;
 }
+
+/* Button animation */
+#menu-bar a:before,
+#menu-bar a:after,
+#menu-bar span:before,
+#menu-bar span:after {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background: #ffffff;
+  transition: 0.7s;
+  z-index: -1;
+}
+
+#menu-bar a:before {
+  top: -2px;
+  left: -2px;
+}
+
+#menu-bar a:after {
+  top: -2px;
+  right: -2px;
+}
+
+#menu-bar span:before {
+  bottom: -2px;
+  left: -2px;
+}
+
+#menu-bar span:after {
+  bottom: -2px;
+  right: -2px;
+}
+
+#menu-bar a:hover:before,
+#menu-bar a:hover:after,
+#menu-bar a:hover span:before,
+#menu-bar a:hover span:after {
+  width: 50%;
+  height: 50%;
+}
+
+/* Button animation ends */
 
 #menu-toggle {
   display: none;
@@ -64,10 +119,13 @@ body {
 }
 
 #container {
+  position: relative;
   display: flex;
   width: 1000px;
+  padding-bottom: 400px;
   margin-left: auto;
   margin-right: auto;
+  z-index: -1;
 }
 
 #left-sidebar {
@@ -99,4 +157,19 @@ body {
   width: 68%;
   height: 100%;
   margin: 20px 20px 20px 30px;
+}
+
+#RHCSA {
+  display: inline-block;
+  width: 45%;
+}
+
+#recons-video {
+  display: inline-block;
+  width: 40%;
+}
+
+#robomaster {
+  display: inline-block;
+  width: 90%;
 }

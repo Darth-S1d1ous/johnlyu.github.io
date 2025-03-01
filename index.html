@@ -17,13 +17,13 @@
         <nav role="navigation" id="menu-bar">
           <ul id="nav-list">
             <li>
-              <a href="index.html">Home</a>
+              <a href="index.html"><span></span>Home</a>
             </li>
             <li>
-              <a href="projects.html">Projects</a>
+              <a href="projects.html"><span></span>Projects</a>
             </li>
             <li>
-              <a href="files/resume.pdf">Vita</a>
+              <a href="files/resume.pdf"><span></span>Vita</a>
             </li>
           </ul>
           <input type="checkbox" id="menu-toggle" />
@@ -58,13 +58,50 @@
         <hr />
       </div>
       <div id="main-content">
-        <h1>Biography</h1>
-        <p>Welcome to my homepage!</p>
-        <p>
-          My name is Lyu Wenzhuang (in Chinese 吕文壮). My English name is John.
-          I am a sophomore from
-          <a href="https://www.hku.hk/">The University of Hong Kong</a>
-        </p>
+        <section id="biography">
+          <h1>Biography</h1>
+          <p>Welcome to my homepage!</p>
+          <p>
+            My name is Lyu Wenzhuang (in Chinese 吕文壮). My English name is
+            John. I am a sophomore from
+            <a href="https://www.hku.hk/">The University of Hong Kong</a>,
+            majoring in Computer Science. I have participated in the Robomaster
+            competition as radar station leader for 2 years and developed strong
+            interests in computer vision and Deep Learning. In early 2025, I
+            worked as a research assistant in InfoBodied Lab and is resonsible
+            for writing camera driver and conduct experiments to collect and
+            evaluate data. Currently, I am focusing on Computer Graphics and Web
+            Development. New things and technology always fascinates me, and I
+            will never hesitate to give them a try. If there are any potential
+            collaborations or opportunities, please feel free to contact me.
+          </p>
+        </section>
+        <section id="highlights">
+          <h1>Highlights</h1>
+          <div id="album">
+            <img id="robomaster" src="images/robomaster.jpg" />
+            <video id="data-video" width="320" height="240" autoplay loop muted>
+              <source src="videos/data_collection.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <video
+              id="recons-video"
+              width="320"
+              height="240"
+              autoplay
+              loop
+              muted
+            >
+              <source src="videos/reconstruction.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <img id="RHCSA" src="images/RHCSA.png" />
+          </div>
+          <p>
+            You can click on <a href="projects.html">here</a> to view all the
+            details!
+          </p>
+        </section>
       </div>
     </div>
   </body>
